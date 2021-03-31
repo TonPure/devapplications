@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CiberLord/devapplications.git"
+    "url": "git+https://github.com/ilb/devapplications.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CiberLord/devapplications/issues"
+    "url": "https://github.com/ilb/devapplications/issues"
   },
-  "homepage": "https://github.com/CiberLord/devapplications#readme",
+  "homepage": "https://github.com/ilb/devapplications#readme",
   "dependencies": {
     "carbone": "^3.1.0"
   }
