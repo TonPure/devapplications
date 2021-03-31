@@ -1,0 +1,28 @@
+{
+    "contract": {
+        "number": 5,
+        "contractDate": "2021-01-15",
+        "firstDate": "2021-03-25",
+        "lastDate": "2021-04-25",
+        "software": "ПО Договор",
+        "requirements": [
+            {
+                "requirement": "требование1"
+            },
+            {
+                "requirement": "требование2"
+            },
+            {
+                "requirement": "требование3"
+            }
+        ],
+        "amount": 5465,
+        "amountInWords": "пять тысяч четыреста шестьдесят пять",
+        "penny": 0,
+        "daysOfAmount": 30,
+        "daysOfAmountInWords": "тридцати",
+        "daysOfFailure": 3,
+        "daysOfFailureInWords": "три",
+        "daysOfWrittenNotice": 10
+    }
+}
