@@ -17,7 +17,7 @@ const data = Object.assign(
 
 
 carbone.render(
-  "devapplications/template/contract_onetime.odt",
+  "templates/contract_onetime.odt",
   data,
   function (err, result) {
     if (err) {
