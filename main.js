@@ -9,21 +9,26 @@ carbone.set({
   timezone: "Europe/Samara",
 });
 
-const data = Object.assign(
-  (employer),
-  (person),
-  (contract)
-);
+const data = Object.assign(employer, person, contract);
 
+function render(templatePath, data, options) {
+  return new Promise((resolve, reject) => {
+    const res = carbone.render(templatePath, data, options, (err, res) => {
+      if (err) {
+        reject(err);
+      }
 
-carbone.render(
-  "templates/contract_onetime.odt",
-  data,
-  function (err, result) {
-    if (err) {
-      return console.log(err);
-    }
+      resolve(res);
+    });
+  });
+}
 
-    fs.writeFileSync("result.odt", result);
+const options = {
+  lang: "ru",
+};
+
+const res = render("templates/contract_onetime.odt", data, options).then(
+  (res) => {
+    fs.writeFileSync("result.odt", res);
   }
 );
